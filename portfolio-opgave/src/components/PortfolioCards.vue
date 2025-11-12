@@ -80,5 +80,5 @@ export default {
 
 
 <style scoped>
-/* mulig css */
+/* */
 </style>

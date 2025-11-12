@@ -1,35 +1,186 @@
 <template>
-  <main>
-    <section class="IfoForside">
-      <div class="introSektion backgroundColorBeige">
-        <div class="infoSektion">
-          <h1 class="Overskrift">Hej jeg hedder <br />Samanta</h1>
-          <p>Jeg elsker at skabe brugervenligt og gennemført digitalt design...</p>
-        </div>
-
-        <div class="ProfileCard">
-          <img src="./Assets/Photos/IMG_0068.JPG" alt="" class="CardBillede" />
-          <h2>Samanta Petrova</h2>
-          <p>Ux/Ui og grafisk designer</p>
-        </div>
-
-        <div class="Introikoner">
-          <div id="lokation">
-            <img src="./Assets/Photos/Ikoner/lokation.png" alt="lokation ikon" />
-            <p>Aalborg</p>
+   <main>
+      <section class="OmMigintro">
+        <div class="introSektion">
+          <div class="lilleBoks infoSektion">
+            <h1 class="Overskrift">Om mig</h1>
+            <p>
+              Jeg er en kreativ og viljestærk designer med en stor passion for
+              farver og visuel formgivning. Kreativitet er min drivkraft, og jeg
+              henter ofte inspiration fra forskellige årtier, hvor jeg lader
+              historiske æstetikker mødes med moderne design. Min tilgang er
+              både legende og målrettet – jeg brænder for at skabe visuelt
+              design, der vækker følelser, fortæller historier og giver hvert
+              projekt et unikt udtryk med en stærk æstetisk identitet.
+            </p>
           </div>
-          <div id="linkedIn">
-            <img src="./Assets/Photos/Ikoner/IN.png" alt="Linked in logo" />
-            <p>Linked In</p>
+          <div class="ProfileCard">
+            <img
+              src="/img/ProfilImg.JPG"
+              alt=""
+              class="CardBillede"
+            />
+            <h2>Samanta Petrova</h2>
+            <p>Ux/Ui og grafisk designer</p>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section class="FremtidsSection backgroundColorBeige">
+        <div class="planerFremtid">
+          <img
+            class="OMStjerne"
+            src=""
+            alt=""
+          />
+          <p>
+            Jeg har store planer for min fremtid, hvor jeg drømmer om at
+            udforske arbejdsmarkedet inden for grafisk design og
+            multimediedesign. På sigt vil jeg gerne prøve kræfter med livet som
+            freelance-designer og arbejde fra min egen kreative vinkel.
+            <br />
+            Jeg har mange interesser og elsker at prøve nye ting. Nogle af mine
+            yndlingshobbyer er at tegne, lave illustrationer og tage poloroid
+            billeder.
+          </p>
+        </div>
+      </section>
+      <section class="MusikSection">
+        <div class="MusikMedBilleder">
+          <div class="MusikTekst">
+            <p>
+              Musik spiller en central rolle i mit liv, den hjælper mig både med
+              at koncentrere mig og med at koble af efter en lang dag. Jeg
+              elsker også at tage til koncerter med venner, fordi jeg nyder den
+              særlige stemning og energi, man kun oplever live.
+            </p>
+          </div>
+          <div class="card-stack" ref="cardStack">
+            <div class="photo-card">
+              <img
+                src=""
+                alt=""
+              />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+
+            <div class="photo-card">
+              <img
+                src=""
+                alt=""
+              />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+
+            <div class="photo-card">
+              <img
+                src=""
+                alt=""
+              />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="" alt="" />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="RejseSection">
+        <div class="RejserMedBilleder">
+          
+          <div class="card-stack" ref="cardStack">
+            <div class="photo-card">
+              <img
+                src=""
+                alt=""
+              />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+
+            <div class="photo-card">
+              <img
+                src=""
+                alt=""
+              />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+
+            <div class="photo-card">
+              <img
+                src=""
+                alt=""
+              />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+
+            <div class="photo-card">
+              <img src="" alt="" />
+              <h2 class="caption">Post Malone</h2>
+              <p class="Lillecaption">Tryk på mig</p>
+            </div>
+          </div>
+          <div class="MusikTekst">
+            <p>
+              Musik spiller en central rolle i mit liv, den hjælper mig både med
+              at koncentrere mig og med at koble af efter en lang dag. Jeg
+              elsker også at tage til koncerter med venner, fordi jeg nyder den
+              særlige stemning og energi, man kun oplever live.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 </template>
 
-<script>
-export default {
-  name: "OmMig",
+<script setup>
+import { ref, onMounted } from 'vue'
+
+// Refs for each card stack
+const cardStackMusik = ref(null)
+const cardStackRejse = ref(null)
+
+// Function to apply card flipping logic to a stack
+const setupCardStack = (stackRef) => {
+  if (!stackRef.value) {
+    console.error('card-stack ikke fundet i DOM - check HTML.')
+    return
+  }
+
+  const handleClick = () => {
+    const topCard = stackRef.value.querySelector('.photo-card')
+    if (!topCard) return
+
+    topCard.classList.add('moving')
+
+    setTimeout(() => {
+      topCard.classList.remove('moving')
+      stackRef.value.appendChild(topCard)
+    }, 520)
+  }
+
+  stackRef.value.addEventListener('click', handleClick)
+
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === 'ArrowRight' || ev.key === ' ') {
+      handleClick()
+    }
+  })
 }
+
+onMounted(() => {
+  setupCardStack(cardStackMusik)
+  setupCardStack(cardStackRejse)
+})
 </script>
+
+
+
+

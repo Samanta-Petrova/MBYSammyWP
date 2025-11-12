@@ -65,6 +65,11 @@ export default {
         </div>
 
         <div class="ProfileCard">
+          <img
+              src="/img/ProfilImg.JPG"
+              alt=""
+              class="CardBillede"
+            />
           <h2>Samanta Petrova</h2>
           <p>Ux/Ui og grafisk designer</p>
         </div>
