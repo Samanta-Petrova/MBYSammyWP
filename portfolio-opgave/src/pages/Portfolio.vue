@@ -2,8 +2,8 @@
   <main>
     <section class="portfolioSection">
       <div class="portfolioSide">
-        <div class="lilleBoks">
-          <h2 class="Overskrift">Portfolio</h2>
+        <div class="lilleBoks GrønBoks">
+          <h2 class="Overskrift GrønBoksOverskrift">Portfolio</h2>
           <p>
             Velkommen til min portfolio. Her kan du få indblik i mine projekter
             som multimediedesignstuderende og grafisk designer, hvor jeg
