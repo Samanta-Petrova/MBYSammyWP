@@ -80,9 +80,9 @@ export default {
             arbejder med Ux/Ui - og front-end design.
           </p>
         </div>
-        <div class="star">
-          <img src="/img/ThePointingStar.png" alt="" />
-        </div>
+      
+          <img class="star" src="/img/ThePointingStar.png" alt="" />
+       
       </div>
     </section>
 
