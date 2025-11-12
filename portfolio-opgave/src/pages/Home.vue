@@ -1,6 +1,7 @@
 <script>
-import PortfolioCards from "../components/PortfolioCards.vue"; // adjust path if needed
-import "../assets/style.css"; // global styles
+import PortfolioCards from "../components/PortfolioCards.vue";
+
+import "../assets/style.css";
 
 export default {
   name: "Home",
@@ -16,12 +17,25 @@ export default {
       iconJs: "/img/JS.png",
       iconPs: "/img/PS.png",
       iconAi: "/img/AI.png",
-      iconId: "/img/Id.png"
+      iconId: "/img/Id.png",
+      homeCards: [
+        {
+          image: "/img/RSOK.jpg",
+          title: "Rold Skov <br /> Orienteringsklub",
+          description: "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+          link: "/rsok"
+        },
+        {
+          image: "/img/AaKFUM.jpg",
+          title: "KFUM Aalborg",
+          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+        }
+      ]
     };
   }
 };
-
 </script>
+
 
 
 <template>
@@ -83,10 +97,13 @@ export default {
         </div>
       </div>
     </section>
+   <section>
+<PortfolioCards :cards="homeCards" />
 
-    <PortfolioCards />
+  </section>
   </main>
-  <footer></footer>
+  <footer>
+  </footer>
 </template>
 
 

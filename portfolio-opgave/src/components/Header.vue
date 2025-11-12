@@ -48,10 +48,4 @@ export default {
   background-color: var(--KnappeGreen);
   border-radius: 30px;
 }
-
-.navConteiner a {
-  text-decoration: none;
-  color: inherit;
-
-}
 </style>

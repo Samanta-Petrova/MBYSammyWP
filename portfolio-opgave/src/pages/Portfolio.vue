@@ -1,6 +1,52 @@
+<script>
+export default {
+  name: "Portfolio",
+  data() {
+    return {
+      activeTab: "webdesign",
+      webdesignCards: [
+        {
+          image: "/img/RSOK.jpg",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig 1",
+          description:
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+        },
+        {
+          image: "/img/MagiskJul.jpg",
+          title: "Magisk jul",
+          caption: "Kør musen over mig 2",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+        }
+      ],
+      grafiskCards: [
+        {
+          image: "/img/IMG_0068.JPG",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig",
+          description:
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+        },
+        {
+          image: "/img/IMG_0068.JPG",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+        }
+      ]
+    };
+  }
+};
+</script>
+
+
+
 <template>
   <main>
     <section class="portfolioSection">
+      
       <div class="portfolioSide">
         <div class="GrønBoks">
           <h2 class="GrønBoksOverskrift">Portfolio</h2>
@@ -79,51 +125,12 @@
         </div>
       </div>
     </section>
+    <PortfolioCards :cards="homeCards" />
+
   </main>
 </template>
 
-<script>
-export default {
-  name: "Portfolio",
-  data() {
-    return {
-      activeTab: "webdesign",
-      webdesignCards: [
-        {
-          image: "/img/RSOK.jpg",
-          title: "Rold Skov <br /> Orienteringsklub",
-          caption: "Kør musen over mig 1",
-          description:
-            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
-        },
-        {
-          image: "/img/MagiskJul.jpg",
-          title: "Magisk jul",
-          caption: "Kør musen over mig 2",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-        }
-      ],
-      grafiskCards: [
-        {
-          image: "/img/IMG_0068.JPG",
-          title: "Rold Skov <br /> Orienteringsklub",
-          caption: "Kør musen over mig",
-          description:
-            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
-        },
-        {
-          image: "/img/IMG_0068.JPG",
-          title: "Rold Skov <br /> Orienteringsklub",
-          caption: "Kør musen over mig",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-        }
-      ]
-    };
-  }
-};
-</script>
+
 
 
 <style scoped>

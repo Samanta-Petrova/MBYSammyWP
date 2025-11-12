@@ -61,7 +61,7 @@ h6 {
   text-align: center;
   gap: 2rem;
   padding-right: 4rem;
-  background: var(--BGBaige);
+
 }
 
 .navConteiner li {
@@ -219,11 +219,9 @@ h6 {
 
 .cardsSektion {
   display: flex;
-  justify-content: left;
   align-items: left;
   padding: var(--NormPadding);
   gap: 1rem;
-
 }
 
 .flip-card {
@@ -315,11 +313,14 @@ h6 {
 }
 
 .pointer {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: contain;
-}
 
+}
+.star{
+  width: 50%;
+}
 /*  */
 /**/
 
@@ -337,14 +338,14 @@ h6 {
   border-radius: 30px;
   padding: 10px;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .GrønBoks {
   background: var(--BGGreen);
   border-radius: 30px;
   padding: 10px;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .FremtidsSection {
   margin-top: var(--NormPadding);
@@ -461,7 +462,9 @@ h6 {
 
 /*  */
 /* Portfolio tabs*/
-
+.PortfolioTaps {
+  background: var(--BGBaige);
+}
 /* ---- Tabs ---- */
 .tab-container {
   margin-top: 25px;
@@ -469,7 +472,9 @@ h6 {
 }
 
 .tab-button {
-  background-color: var(--BGBaige);
+  margin: 0.5rem;
+  margin-bottom: 0rem;
+  background-color: var(--BGGreen);
   border: none;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -487,6 +492,12 @@ h6 {
 }
 
 /* ---- Content ---- */
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 .tab-content {
   display: none;
   padding: 40px;
@@ -539,8 +550,9 @@ h6 {
   display: flex;
 }
 
-.star {
-  width: 300px;
-  padding: 40px;
-  margin-right: 300px;
+
+
+.enklOpgave{
+  display: flex;
+  margin: 20px;
 }

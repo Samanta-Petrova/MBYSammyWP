@@ -1,9 +1,13 @@
+
+ <!-- App.vue -->
 <template>
   <div id="app">
-    <NavHeader />      <!-- Header vises altid -->
-    <router-view />    <!-- Vue Router viser den aktuelle side her -->
+    <NavHeader />
+    <router-view />
   </div>
 </template>
+
+
 
 <script>
 import NavHeader from './components/Header.vue' // sørg for stien er korrekt
@@ -17,5 +21,5 @@ export default {
 </script>
 
 <style>
-
+/**/
 </style>
