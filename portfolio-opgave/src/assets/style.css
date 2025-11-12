@@ -329,8 +329,9 @@ h6 {
 .lilleBoks {
   background: var(--BGPurple);
   border-radius: 30px;
-  padding: 30px;
+  padding: 10px;
   line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 .FremtidsSection {
@@ -528,4 +529,6 @@ h6 {
 
 .star {
   width: 300px;
+  padding: 40px;
+  margin-right: 300px;
 }

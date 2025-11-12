@@ -1,3 +1,29 @@
+<script>
+import PortfolioCards from "../components/PortfolioCards.vue"; // adjust path if needed
+import "../assets/style.css"; // global styles
+
+export default {
+  name: "Home",
+  components: {
+    PortfolioCards
+  },
+  data() {
+    return {
+      iconLocation: "/img/lokation.png",
+      iconLinkedIn: "/img/IN.png",
+      iconHtml: "/img/Html.png",
+      iconCss: "/img/CSS.png",
+      iconJs: "/img/JS.png",
+      iconPs: "/img/PS.png",
+      iconAi: "/img/AI.png",
+      iconId: "/img/Id.png"
+    };
+  }
+};
+
+</script>
+
+
 <template>
   <main>
     <section class="IfoForside">
@@ -25,7 +51,6 @@
         </div>
 
         <div class="ProfileCard">
-          <img :src="profileImage" alt="Profilbillede" class="CardBillede" />
           <h2>Samanta Petrova</h2>
           <p>Ux/Ui og grafisk designer</p>
         </div>
@@ -64,33 +89,7 @@
   <footer></footer>
 </template>
 
-<script>
-import caseImage from "@/src/assets/img/RSOK.jpg";
-import starImage from "@/src/assets/img/TheStarVenstre.png";
 
-export default {
-  name: "PortfolioPreview",
-  data() {
-    return {
-      caseImage,
-      starImage,
-      cards: [
-        {
-          image: caseImage,
-          title: "Rold Skov <br /> Orienteringsklub",
-          description: "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
-        },
-        {
-          image: caseImage,
-          title: "Rold Skov <br /> Orienteringsklub",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-        },
-      ],
-    };
-  },
-};
-
-</script>
 
 <style scoped>
 /* Optional scoped styles */

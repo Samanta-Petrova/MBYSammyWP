@@ -24,8 +24,8 @@ export default {
       links: [
         { text: "Forside", href: "/" },
         { text: "Portfolio", href: "/portfolio" },
-        { text: "Kontakt", href: "/kontakt" },
         { text: "Om Mig", href: "/OmMig" },
+        { text: "Kontakt", href: "/kontakt" },
       ],
     };
   },
@@ -33,12 +33,16 @@ export default {
 </script>
 
 <style scoped>
+h1, h2, h3, h4, h5, h6 {
+font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 .navConteiner {
   display: flex;
-  justify-content: end;
   gap: 2rem;
+  justify-content: end;
   padding-right: 4rem;
-  background: var(--BGBaige);
 }
 
 .navConteiner li {

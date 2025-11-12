@@ -1,26 +1,80 @@
 <template>
   <main>
-    <section class="IfoForside">
-      <div class="introSektion backgroundColorBeige">
-        <div class="infoSektion">
-          <h1 class="Overskrift">Hej jeg hedder <br />Samanta</h1>
-          <p>Jeg elsker at skabe brugervenligt og gennemført digitalt design...</p>
+    <section class="portfolioSection">
+      <div class="portfolioSide">
+        <div class="lilleBoks">
+          <h2 class="Overskrift">Portfolio</h2>
+          <p>
+            Velkommen til min portfolio. Her kan du få indblik i mine projekter
+            som multimediedesignstuderende og grafisk designer, hvor jeg
+            arbejder med Ux/Ui - og front-end design.
+          </p>
         </div>
-
-        <div class="ProfileCard">
-          <img src="./Assets/Photos/IMG_0068.JPG" alt="" class="CardBillede" />
-          <h2>Samanta Petrova</h2>
-          <p>Ux/Ui og grafisk designer</p>
+        <div class="star">
+          <img src="/img/ThePointingStar.png" alt="" />
         </div>
+      </div>
+    </section>
 
-        <div class="Introikoner">
-          <div id="lokation">
-            <img src="./Assets/Photos/Ikoner/lokation.png" alt="lokation ikon" />
-            <p>Aalborg</p>
+    <section class="PortfolioTaps">
+      <!-- Tabs -->
+      <div class="tab-container">
+        <button
+          class="tab-button"
+          :class="{ active: activeTab === 'webdesign' }"
+          @click="activeTab = 'webdesign'"
+        >
+          Web design
+        </button>
+        <button
+          class="tab-button"
+          :class="{ active: activeTab === 'grafisk' }"
+          @click="activeTab = 'grafisk'"
+        >
+          Grafisk Design
+        </button>
+      </div>
+
+      <!-- Webdesign content -->
+      <div
+        id="webdesign"
+        class="portfolioSektion card-grid tab-content"
+        v-show="activeTab === 'webdesign'"
+      >
+        <div class="flip-card" v-for="(card, index) in webdesignCards" :key="index">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card">
+              <img :src="card.image" alt="Case billede" />
+              <h2 v-html="card.title"></h2>
+              <p class="Lillecaption">
+                {{ card.caption }} <i class="fa-solid fa-chevron-right"></i>
+              </p>
+            </div>
+            <div class="flip-card-bagside">
+              <p>{{ card.description }}</p>
+            </div>
           </div>
-          <div id="linkedIn">
-            <img src="./Assets/Photos/Ikoner/IN.png" alt="Linked in logo" />
-            <p>Linked In</p>
+        </div>
+      </div>
+
+      <!-- Grafisk Design content -->
+      <div
+        id="grafisk"
+        class="portfolioSektion card-grid tab-content"
+        v-show="activeTab === 'grafisk'"
+      >
+        <div class="flip-card" v-for="(card, index) in grafiskCards" :key="index">
+          <div class="flip-card-inner">
+            <div class="flip-card-front card">
+              <img :src="card.image" alt="Case billede" />
+              <h2 v-html="card.title"></h2>
+              <p class="Lillecaption">
+                {{ card.caption }} <i class="fa-solid fa-chevron-right"></i>
+              </p>
+            </div>
+            <div class="flip-card-bagside">
+              <p>{{ card.description }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -31,5 +85,50 @@
 <script>
 export default {
   name: "Portfolio",
-}
+  data() {
+    return {
+      activeTab: "webdesign",
+      webdesignCards: [
+        {
+          image: "/img/RSOK.jpg",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig 1",
+          description:
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+        },
+        {
+          image: "/img/MagiskJul.jpg",
+          title: "Magisk jul",
+          caption: "Kør musen over mig 2",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+        }
+      ],
+      grafiskCards: [
+        {
+          image: "/img/IMG_0068.JPG",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig",
+          description:
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+        },
+        {
+          image: "/img/IMG_0068.JPG",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+        }
+      ]
+    };
+  }
+};
 </script>
+
+
+<style scoped>
+/* You can keep your existing CSS in style.css, or move tab-specific styles here */
+</style>
+
+
+

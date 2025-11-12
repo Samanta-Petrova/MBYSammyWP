@@ -5,26 +5,26 @@ export default {
     return {
       cards: [
         {
-          image: require("@/assets/Photos/IMG_0068.JPG"),
+          image: "/img/RSOK.jpg",
           title: "Rold Skov <br /> Orienteringsklub",
           description:
             "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
         },
         {
-          image: require("@/assets/Photos/IMG_0068.JPG"),
-          title: "Rold Skov <br /> Orienteringsklub",
+          image: "/img/DesignCase.jpg",
+          title: "Design Case <br /> Branding",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-        },
+        }
       ],
+      starImage: "/img/TheStarVenstre.png"
     };
-  },
+  }
 };
 </script>
 
-
 <template>
-<section class="portfolioSektion BackgroundColorGreen">
+  <section class="portfolioSektion BackgroundColorGreen">
     <h2 class="Overskrift">Nyeste cases</h2>
     <div class="cardsSektion">
       <div class="flip-card" v-for="(card, index) in cards" :key="index">
@@ -44,18 +44,13 @@ export default {
       <div class="SeeMere">
         <p>See mere her <i class="fa-solid fa-chevron-right"></i></p>
         <a href="/portfolio">
-          <img class="pointer" :src="starImage" alt="" />
-
-          />
+          <img class="pointer" :src="starImage" alt="Se mere stjerne" />
         </a>
       </div>
     </div>
   </section>
-
 </template>
 
-
-
 <style scoped>
-
+/* Leave empty if you're using global style.css */
 </style>

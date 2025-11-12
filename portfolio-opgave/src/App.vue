@@ -17,5 +17,5 @@ export default {
 </script>
 
 <style>
-/* evt. global styling her */
+
 </style>
