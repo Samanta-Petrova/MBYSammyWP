@@ -9,6 +9,7 @@ export default {
           title: "Rold Skov <br /> Orienteringsklub",
           description:
             "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+            link
         },
         {
           image: "/img/DesignCase.jpg",

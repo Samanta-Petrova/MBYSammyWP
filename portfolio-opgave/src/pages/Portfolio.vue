@@ -2,8 +2,8 @@
   <main>
     <section class="portfolioSection">
       <div class="portfolioSide">
-        <div class="lilleBoks GrønBoks">
-          <h2 class="Overskrift GrønBoksOverskrift">Portfolio</h2>
+        <div class="GrønBoks">
+          <h2 class="GrønBoksOverskrift">Portfolio</h2>
           <p>
             Velkommen til min portfolio. Her kan du få indblik i mine projekter
             som multimediedesignstuderende og grafisk designer, hvor jeg
@@ -127,7 +127,7 @@ export default {
 
 
 <style scoped>
-/* You can keep your existing CSS in style.css, or move tab-specific styles here */
+/* your styles here */
 </style>
 
 

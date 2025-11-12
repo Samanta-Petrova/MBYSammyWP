@@ -33,16 +33,13 @@ export default {
 </script>
 
 <style scoped>
-h1, h2, h3, h4, h5, h6 {
-font-family: "Fascinate", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
+
 .navConteiner {
   display: flex;
   gap: 2rem;
   justify-content: end;
   padding-right: 4rem;
+  font-weight: normal;
 }
 
 .navConteiner li {
@@ -55,6 +52,6 @@ font-family: "Fascinate", system-ui;
 .navConteiner a {
   text-decoration: none;
   color: inherit;
-  font-weight: bold;
+
 }
 </style>
