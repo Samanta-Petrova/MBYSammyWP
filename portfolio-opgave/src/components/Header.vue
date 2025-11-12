@@ -1,14 +1,3 @@
-<template>
-  <header>
-    <nav>
-      <ul :class="background ? 'navConteiner' : 'navConteinerUBG'">
-        <li v-for="(link, index) in links" :key="index">
-          <router-link :to="link.href">{{ link.text }}</router-link>
-        </li>
-      </ul>
-    </nav>
-  </header>
-</template>
 
 <script>
 export default {
@@ -32,20 +21,21 @@ export default {
 };
 </script>
 
+<template>
+  <header>
+    <nav>
+      <ul :class="background ? 'navConteiner' : 'navConteinerUBG'">
+        <li v-for="(link, index) in links" :key="index">
+          <router-link :to="link.href">{{ link.text }}</router-link>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</template>
+
+
+
 <style scoped>
 
-.navConteiner {
-  display: flex;
-  gap: 2rem;
-  justify-content: end;
-  padding-right: 4rem;
-  font-weight: normal;
-}
-
-.navConteiner li {
-  list-style: none;
-  padding: 1rem 2rem;
-  background-color: var(--KnappeGreen);
-  border-radius: 30px;
-}
+/* */
 </style>

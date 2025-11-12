@@ -21,7 +21,6 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  margin: 0 auto;
   padding: 0;
   line-height: 2rem;
 }
@@ -41,7 +40,11 @@ h6 {
   font-weight: 400;
   font-style: normal;
 }
-
+p{
+    padding: 20px;
+      width: 80%;
+      text-align: left;
+}
 :root {
   --KnappeGreen: #DEE6D6;
   --PrimePurple: #817696;
@@ -145,12 +148,12 @@ h6 {
   border: 3px solid #d9d8c8;
   border-radius: 12px;
   padding: 5px;
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 400px;
+  width: 450px;
+  height: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: rotate(5deg);
   text-align: center;
+  margin-left: 25%;
 }
 
 .CardBillede {
@@ -313,13 +316,15 @@ h6 {
 }
 
 .pointer {
-  width: 250px;
-  height: 250px;
-  object-fit: contain;
+  width: 290px;
+  height: 350px;
 
 }
 .star{
-  width: 50%;
+  margin-top: 50px;
+    margin-left: 150px;
+    width: 290px;
+    height: 350px;
 }
 /*  */
 /**/
@@ -343,9 +348,10 @@ h6 {
 .GrønBoks {
   background: var(--BGGreen);
   border-radius: 30px;
-  padding: 10px;
+  padding: 30px;
   line-height: 2rem;
   font-size: 1.2rem;
+  width: 65ch;
 }
 .FremtidsSection {
   margin-top: var(--NormPadding);
@@ -462,9 +468,7 @@ h6 {
 
 /*  */
 /* Portfolio tabs*/
-.PortfolioTaps {
-  background: var(--BGBaige);
-}
+
 /* ---- Tabs ---- */
 .tab-container {
   margin-top: 25px;
@@ -499,12 +503,14 @@ h6 {
   color: inherit;
 }
 .tab-content {
-  display: none;
+  display: block;
   padding: 40px;
   background-color: var(--BGPurple);
   min-height: 400px;
 }
-
+.tab-content h2{
+  color: #817696;
+}
 .tab-content.active {
   display: block;
 }

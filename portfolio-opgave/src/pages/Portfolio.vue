@@ -1,6 +1,11 @@
 <script>
+import Card from '../components/Card.vue';
+
 export default {
   name: "Portfolio",
+  components: {
+    Card
+  },
   data() {
     return {
       activeTab: "webdesign",
@@ -8,38 +13,57 @@ export default {
         {
           image: "/img/RSOK.jpg",
           title: "Rold Skov <br /> Orienteringsklub",
-          caption: "Kør musen over mig 1",
+          caption: "Kør musen over mig ",
           description:
             "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+          route: "/rsok"
+        },
+        {
+          image: "/img/AaKFUM.jpg",
+          title: "KFUM Aalborg",
+          caption: "Kør musen over mig ",
+          description:
+            "KFUM Aalborg er en ungdomsorganisation med fokus på fællesskab og aktiviteter.",
+          route: "/kfum"
         },
         {
           image: "/img/MagiskJul.jpg",
-          title: "Magisk jul",
-          caption: "Kør musen over mig 2",
+          title: "Magnus Bonde <br/> League of Legends",
+          caption: "Kør musen over mig ",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+            "Et juleeventyr fyldt med lys, musik og magiske oplevelser.",
+          route: "/magisk-jul"
+        },
+        {
+          image: "/img/MagiskJul.jpg",
+          title: "Blokhus<br/>Magisk jul",
+          caption: "Kør musen over mig ",
+          description:
+            "En moderne app designet til at forbedre brugeroplevelsen.",
+          route: "/ny-app"
         }
       ],
       grafiskCards: [
         {
           image: "/img/IMG_0068.JPG",
-          title: "Rold Skov <br /> Orienteringsklub",
+          title: "Plakatdesign",
           caption: "Kør musen over mig",
           description:
-            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+            "Et kreativt plakatdesign til en lokal begivenhed."
         },
         {
           image: "/img/IMG_0068.JPG",
-          title: "Rold Skov <br /> Orienteringsklub",
+          title: "Logo koncept",
           caption: "Kør musen over mig",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+            "Et minimalistisk logo designet til en startup."
         }
       ]
     };
   }
 };
 </script>
+
 
 
 
@@ -82,26 +106,21 @@ export default {
       </div>
 
       <!-- Webdesign content -->
-      <div
-        id="webdesign"
-        class="portfolioSektion card-grid tab-content"
-        v-show="activeTab === 'webdesign'"
-      >
-        <div class="flip-card" v-for="(card, index) in webdesignCards" :key="index">
-          <div class="flip-card-inner">
-            <div class="flip-card-front card">
-              <img :src="card.image" alt="Case billede" />
-              <h2 v-html="card.title"></h2>
-              <p class="Lillecaption">
-                {{ card.caption }} <i class="fa-solid fa-chevron-right"></i>
-              </p>
-            </div>
-            <div class="flip-card-bagside">
-              <p>{{ card.description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div
+  id="webdesign"
+  class="portfolioSektion card-grid tab-content"
+  v-show="activeTab === 'webdesign'"
+>
+  <div
+    v-for="(card, index) in webdesignCards"
+    :key="index"
+    class="flip-card"
+  >
+    <Card :card="card" />
+  </div>
+</div>
+
+
 
       <!-- Grafisk Design content -->
       <div
@@ -125,12 +144,8 @@ export default {
         </div>
       </div>
     </section>
-    <PortfolioCards :cards="homeCards" />
-
   </main>
 </template>
-
-
 
 
 <style scoped>
