@@ -1,3 +1,51 @@
+<script setup>
+import { ref, onMounted } from 'vue'
+import PortfolioCards from "../components/PortfolioCards.vue"
+
+// Refs for each card stack
+const cardStackMusik = ref(null)
+const cardStackRejse = ref(null)
+const homeCards = ref([]) // or populate with actual card data
+
+
+// Function to apply card flipping logic to a stack
+const setupCardStack = (stackRef) => {
+  if (!stackRef.value) {
+    console.error('card-stack ikke fundet i DOM - check HTML.')
+    return
+  }
+
+  const handleClick = () => {
+    const topCard = stackRef.value.querySelector('.photo-card')
+    if (!topCard) return
+
+    topCard.classList.add('moving')
+
+    setTimeout(() => {
+      topCard.classList.remove('moving')
+      stackRef.value.appendChild(topCard)
+    }, 520)
+  }
+
+  stackRef.value.addEventListener('click', handleClick)
+
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === 'ArrowRight' || ev.key === ' ') {
+      handleClick()
+    }
+  })
+}
+
+onMounted(() => {
+  setupCardStack(cardStackMusik)
+  setupCardStack(cardStackRejse)
+})
+
+</script>
+
+
+
+
 <template>
    <main>
       <section class="OmMigintro">
@@ -29,7 +77,7 @@
         <div class="planerFremtid">
           <img
             class="OMStjerne"
-            src=""
+            src="/img/ThestaropenArms.png"
             alt=""
           />
           <p>
@@ -54,7 +102,7 @@
               særlige stemning og energi, man kun oplever live.
             </p>
           </div>
-          <div class="card-stack" ref="cardStack">
+          <div class="card-stack" ref="cardStackMusik">
             <div class="photo-card">
               <img
                 src=""
@@ -93,7 +141,7 @@
       <section class="RejseSection">
         <div class="RejserMedBilleder">
           
-          <div class="card-stack" ref="cardStack">
+          <div class="card-stack" ref="cardStackRejse">
             <div class="photo-card">
               <img
                 src=""
@@ -127,59 +175,20 @@
               <p class="Lillecaption">Tryk på mig</p>
             </div>
           </div>
-          <div class="MusikTekst">
+          <div class="RejseTekst">
             <p>
-              Musik spiller en central rolle i mit liv, den hjælper mig både med
-              at koncentrere mig og med at koble af efter en lang dag. Jeg
-              elsker også at tage til koncerter med venner, fordi jeg nyder den
-              særlige stemning og energi, man kun oplever live.
+              Jeg elsker at rejse, fordi det er utrolig spændende at opleve noget nyt og se, hvordan mennesker lever i andre lande. Hver rejse giver mig nye indtryk og inspiration. Samtidig betyder det meget for mig at vende tilbage til Letland, som er mit hjemland – der føler jeg mig altid hjemme, uanset hvor længe jeg har været væk.
             </p>
           </div>
         </div>
       </section>
+      <section><PortfolioCards :cards="homeCards" /></section>
     </main>
 </template>
 
-<script setup>
-import { ref, onMounted } from 'vue'
-
-// Refs for each card stack
-const cardStackMusik = ref(null)
-const cardStackRejse = ref(null)
-
-// Function to apply card flipping logic to a stack
-const setupCardStack = (stackRef) => {
-  if (!stackRef.value) {
-    console.error('card-stack ikke fundet i DOM - check HTML.')
-    return
-  }
-
-  const handleClick = () => {
-    const topCard = stackRef.value.querySelector('.photo-card')
-    if (!topCard) return
-
-    topCard.classList.add('moving')
-
-    setTimeout(() => {
-      topCard.classList.remove('moving')
-      stackRef.value.appendChild(topCard)
-    }, 520)
-  }
-
-  stackRef.value.addEventListener('click', handleClick)
-
-  document.addEventListener('keydown', (ev) => {
-    if (ev.key === 'ArrowRight' || ev.key === ' ') {
-      handleClick()
-    }
-  })
-}
-
-onMounted(() => {
-  setupCardStack(cardStackMusik)
-  setupCardStack(cardStackRejse)
-})
-</script>
+<style scoped>
+/* */
+</style>
 
 
 

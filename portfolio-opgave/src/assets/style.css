@@ -389,6 +389,18 @@ width: 437px;
   align-items: center;
   margin-bottom: var(--NormPadding);
 }
+.RejserMedBilleder {
+  display: flex;
+  align-items: center;
+}
+
+.RejseTekst {
+  background: var(--BGPurple);
+  padding: var(--NormPadding);
+  border-radius: 30px;
+  align-items: center;
+  margin-bottom: var(--NormPadding);
+}
 
 .OMStjerne {
   width: 400px;

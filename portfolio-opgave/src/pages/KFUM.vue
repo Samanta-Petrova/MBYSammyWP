@@ -1,7 +1,13 @@
 
 <script>
+import PortfolioCards from "../components/PortfolioCards.vue";
+
+
 export default {
   name: "KFUM",
+  components:{
+    PortfolioCards
+  },
   data() {
     return {
       activeTab: "problem"
@@ -11,8 +17,6 @@ export default {
 </script>
 
 <template>
-
-
   <section class="enklOpgaveSide">
     <div class="enklOpgave" >
   <div class="GrønBoks ">
@@ -63,60 +67,55 @@ export default {
     >
       Produkt
     </button>
+    <button
+      class="tab-button"
+      :class="{ active: activeTab === 'kode' }"
+      @click="activeTab = 'kode'"
+    >
+      Kode
+    </button>
   </div>
 
   <!-- Tab Content -->
   <div v-show="activeTab === 'problem'" class="tab-content problemsektion">
     <h2 class="Overskrift">Problem</h2>
-    <p>Rold Skov Orienteringsklub (RSOK) står over for en række udfordringer, som truer klubbens vækst og fremtidige eksistens. En af de største udfordringer er mangel på nye medlemmer, hvilket både påvirker klubbens økonomi og det sociale fællesskab negativt. Med færre medlemmer bliver det vanskeligere at opretholde aktiviteter og tiltrække sponsorer, hvilket yderligere svækker klubbens fundament.  </p>
-    <p>Samtidig oplever klubben, at orienteringsløb som sport ofte virker utilgængelig eller kompleks for udefrakommende. Manglende formidling af sporten på en enkel og inspirerende måde skaber en opfattelse af, at det er en aktivitet, der kun henvender sig til en smal målgruppe. Dette gør det endnu sværere at nå ud til nye medlemmer og tiltrække folk, der ellers kunne have interesse i at deltage.</p>
+    <p>lubben har et brændende ønske om at beholde sine nuværende medlemmer og rekruttere nye, men det kan være svært når man konkurrerer med mange andre fodboldklubber i storbyen. Kan det have at gøre med, at det første et nyt medlem møder, er en hjemmeside, som ligner alle andre? 
+ </p>
 
-    <p>En anden væsentlig udfordring er klubbens nuværende hjemmeside, der fremstår dårligt organiseret og ineffektiv som kommunikationsværktøj. Det er vanskeligt for både eksisterende og potentielle medlemmer at finde relevant information, hvilket skaber unødvendige barrierer for involvering. For potentielle medlemmer, der overvejer at starte med orienteringsløb, mangler hjemmesiden tydelig vejledning og inspiration. Dette kan føre til, at mange vælger ikke at tage det næste skridt mod at blive en del af klubben. </p>
-    <p>Kombinationen af et faldende medlemstal, en ineffektiv hjemmeside og en kompleks opfattelse af sporten betyder, at RSOK står i en situation, hvor der er brug for en gennemgribende indsats for at gøre klubben mere tilgængelig, imødekommende og relevant for en bredere målgruppe. 
-På baggrund af denne problembeskrivelse er vi nået frem til følgende problemformulering.
+    <p>Klubbens hjemmeside er opsat på DBU’s KlubOffice, som er en platform rigtig mange andre klubber bruger. Platformen er en nem måde, hvorpå klubberne kan opsætte en hjemmeside, uden at skulle have en ansat med meget baggrundsviden inden for faget. Den begrænser dog muligheden for at personliggøre sin hjemmeside da der bruges en standard skabelon. </p>
+
+    <p>På nuværende tidspunkt møder medlemmerne en lettere uoverskuelig hjemmeside, som nok et eller andet sted minder om noget fra 00’erne. Hjemmesidens indhold er placeret kompakt, og når der er meget indhold kan det hurtigt virke rodet. 
 </p>
-    <div class="problemet">
-    <img src="/img/RSOKProblem1.png" alt="">
-    <img src="/img/RSOKProblem2.png" alt=""></img>
+    <div class="problemetKFUM">
+    <img src="/img/KFUMproblem.png
+    " alt="">
+    
     </div>
   </div>
 
   <div v-show="activeTab === 'research'" class="tab-content ">
     <h2 class="Overskrift">Research</h2>
-    <p>Projektet starter med en desk research, hvor der indsamles viden om orienteringsløb i Danmark og danskernes brug af natur og foreningsliv. Data viser, at orienteringssporten er aktiv og populær, bl.a. med 314 løb og 70.000 deltagere i 2019, samt store internationale mesterskaber i Danmark. Naturen spiller en central rolle i sporten og forbindes med ansvarlighed og respekt for omgivelserne. Generelt opholder mange danskere sig ofte i naturen, især for afslapning, oplevelser, motion og socialt samvær. </p>
-    <h3>På baggrund af denne viden udvælges tre centrale målgrupper:
-</h3>
-<div class="liste">
-<ul>
-  <li><img class="blomstG" src="/img/blomstG.png" alt="">Interesserede, men uerfarne – personer, der er nysgerrige, men ser sporten som kompliceret.</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt=""> Naturen som aktiviteten i sig selv – brugere, der søger ro og naturoplevelser.</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt="">Aktiviteter i naturen – dem, der kombinerer motion, natur og fællesskab.</li>
-</ul>
-</div>
-<p>Disse segmenter danner grundlag for designet af en brugervenlig og målrettet hjemmeside, der både skal tiltrække nye medlemmer og fastholde eksisterende.</p>
+    <p>Hjemmesiden skal kunne bruges af alle aldersgrupper, men projektet fokuserer på børnefamilier, da klubben ønsker at appellere til denne målgruppe. Derfor laves brugerundersøgelser med udgangspunkt i forældrene, som forventes at være de primære brugere af hjemmesiden. De bruger siden til tilmelding, information om træning og kampe samt nyheder. </p>
+    <p>Der udarbejdes en segmentering ud fra både objektive og subjektive kriterier for at forstå forældrenes behov og adfærd. Hypoteser testes gennem desk research, og ved behov suppleres med yderligere undersøgelser.</p>
+    <p>For at uddybe indsigterne gennemføres semistrukturerede kvalitative interviews med forældre. Interviewene optages, transskriberes og analyseres tematisk for at finde fællestræk. Analysen viser, at forældre vægter, at børnene går til fodbold for det sociale fællesskab og fordi vennerne også spiller.</p>
+    <p>Derudover forventer forældrene, at trænerne er pædagogiske, og at klubben er inkluderende, så alle børn trives – uanset niveau.
+</p>
+<p>De gennemgående temaer fra interviewene skal danne grundlag for den videre udvikling af hjemmesiden, så den afspejler brugernes behov og værdier.</p>
 
   </div>
 
   <div v-show="activeTab === 'analyse'" class="tab-content">
     <h2 class="Overskrift">Analyse</h2>
     <p>
-  Der anvendes en kvalitativ interviewmetode for at opnå indsigt i behov, præferencer og adfærd i relation til naturaktiviteter og foreningssport – især orienteringsløb. Metoden giver et overblik over de faktorer, som brugerne selv fremhæver som motiverende for deltagelse. Her ses tre hovedpointer fra interviews:
+  I det videre arbejde skal hjemmesiden udvikles med udgangspunkt i forældrenes udsagn fra interviewene. Selvom kun seks forældre blev interviewet, viser resultaterne tydelige fællestræk og behov, som bør afspejles i designet.
 </p>
-<div class="liste">
-<ul>
-  <li><img class="blomstG" src="/img/blomstG.png" alt="">Barrierer: Tidsmangel, særligt hos familier med små børn, og bekymring for ikke at passe ind i foreningsfællesskabet.</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt=""> Motivation: Ønske om kvalitetstid i naturen, fællesskab og let adgang til at prøve sporten.
-</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt="">Behov: Enkle opstartsmuligheder og begyndervenlige tilbud.</li>
-</ul>
-</div>
-<div>
-  <h3>Affinity diagram</h3>
-  <p>Der udføres affinity diagram for at gruppere og organisere data. Data anvendt fremkommer af intervieaws, samt indhold fra tidligere hjemmeside. </p>
-  <img src="/img/RSOKAffinity.png" alt="">
-  <p>Disse grupperinger bliver kategoriseret og danner grundlag for udviklingen af et content sitemap, som efterfølgende anvendes til at strukturere navigationen på hjemmesiden.</p>
+<p>Der udarbejdes et Empathy Map for hver deltager, hvor svarene opdeles i Think, Do, Say, Feel samt Pains og Gains. Denne metode giver indsigt i brugernes tanker, følelser, frustrationer og ønsker. Analysen afsluttes med User Need Insights, som opsummerer de vigtigste behov – især ønsket om, at børnene skal være en del af et socialt fællesskab.</p>
 
-  <img src="/img/RSOKNav.png" alt="">
+<img id="EMHele" src="/img/EmpathyMapHELE.png
+" alt="">
+<div class="EmpatyMap">
+  <img src="/img/Gains.png" alt="">
+  <img src="/img/Pains.png" alt="">
 </div>
   </div>
 
@@ -145,6 +144,7 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
     </div>
   </div>
 </section>
+<section><PortfolioCards :cards="homeCards" /></section>
 
 </template>
 
@@ -181,5 +181,17 @@ h3 {
 }
 .skitser img{
   padding:20px
+}
+.problemetKFUM img{
+  width: 70%;
+}
+
+.EmpatyMap img {
+  padding-right: 20px;
+  width:70%
+}
+#EMHele{
+  width: 70%;
+  padding-bottom: 20px;
 }
 </style>

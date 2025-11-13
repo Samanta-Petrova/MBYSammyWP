@@ -15,7 +15,7 @@ export default {
           title: "Rold Skov <br /> Orienteringsklub",
           caption: "Kør musen over mig ",
           description:
-            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub (herefter RSOK), som er en aktiv orienteringsløbeklub. Klubben har en stærk tilknytning til den naturskønne skov og tilbyder aktiviteter, der kombinerer motion, mental udfordring og socialt fællesskab.",
           route: "/rsok"
         },
         {
@@ -31,8 +31,8 @@ export default {
           title: "Magnus Bonde <br/> League of Legends",
           caption: "Kør musen over mig ",
           description:
-            "Et juleeventyr fyldt med lys, musik og magiske oplevelser.",
-          route: "/magisk-jul"
+            "Jeg har udviklet en portfolioside for en semi-professionel League of Legends-spiller. Formålet med projektet var at skabe en overskuelig og brugervenlig platform, hvor besøgende nemt kunne finde alle relevante informationer om spilleren.",
+          route: "/magnus"
         },
         {
           image: "/img/MagiskJul.jpg",
