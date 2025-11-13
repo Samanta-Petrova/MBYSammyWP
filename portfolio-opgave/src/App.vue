@@ -10,7 +10,7 @@
 
 
 <script>
-import NavHeader from './components/Header.vue' // sørg for stien er korrekt
+import NavHeader from './components/Header.vue' 
 
 export default {
   name: 'App',

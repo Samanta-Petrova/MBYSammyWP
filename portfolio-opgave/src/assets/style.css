@@ -22,7 +22,6 @@
   font-variation-settings:
     "wdth" 100;
   padding: 0;
-  line-height: 2rem;
 }
 
 a {
@@ -48,6 +47,7 @@ p{
 :root {
   --KnappeGreen: #DEE6D6;
   --PrimePurple: #817696;
+  --PrimeGreen: #8B9676;
   --BGGreen: #E3EDD9;
   --BGBaige: #F9F6EA;
   --BGPurple: #F0E9F9;
@@ -57,48 +57,6 @@ p{
 
 }
 
-/* Nav */
-.navConteiner {
-  display: flex;
-  justify-content: end;
-  text-align: center;
-  gap: 2rem;
-  padding-right: 4rem;
-
-}
-
-.navConteiner li {
-  list-style-type: none;
-  padding: 1.3rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  align-items: end;
-  background-color: var(--KnappeGreen);
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.navConteinerUBG {
-  display: flex;
-  justify-content: end;
-  text-align: center;
-  gap: 2rem;
-  padding-right: 4rem;
-}
-
-.navConteinerUBG li {
-  list-style-type: none;
-  padding: 1.3rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  align-items: end;
-  background-color: var(--KnappeGreen);
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/**/
-/**/
 
 /* Forside -  intro */
 .backgroundColorBeige {
@@ -229,6 +187,13 @@ width: 437px;
     margin-top: 2rem;
       font-size: 2.5rem;
       padding-bottom: var(--MediumPaddingh);
+}
+.LillaBoksOverskrift{
+    margin-top: 2rem;
+      font-size: 2.5rem;
+      padding-bottom: var(--MediumPaddingh);
+      color: var(--PrimeGreen);
+      padding-top: 30px;
 }
 
 .portfolioSektion h2 {

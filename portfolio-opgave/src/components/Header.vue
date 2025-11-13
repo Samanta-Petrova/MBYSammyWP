@@ -36,6 +36,25 @@ export default {
 
 
 <style scoped>
+.navConteiner {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+  gap: 2rem;
+  padding-right: 4rem;
+  padding: 20px;
 
-/* */
+}
+
+.navConteiner li {
+  list-style-type: none;
+  padding: 1.3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  align-items: end;
+  background-color: var(--KnappeGreen);
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 </style>

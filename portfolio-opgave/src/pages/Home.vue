@@ -1,42 +1,60 @@
 <script>
-import PortfolioCards from "../components/PortfolioCards.vue";
-
-import "../assets/style.css";
+import Card from "../components/Card.vue"
 
 export default {
   name: "Home",
   components: {
-    PortfolioCards
+    Card
   },
   data() {
-    return {
-      iconLocation: "/img/lokation.png",
-      iconLinkedIn: "/img/IN.png",
-      iconHtml: "/img/Html.png",
-      iconCss: "/img/CSS.png",
-      iconJs: "/img/JS.png",
-      iconPs: "/img/PS.png",
-      iconAi: "/img/AI.png",
-      iconId: "/img/Id.png",
-      homeCards: [
+  return {
+    iconLocation: "/img/lokation.png",
+    iconLinkedIn: "/img/IN.png",
+    iconHtml: "/img/Html.png",
+    iconCss: "/img/CSS.png",
+    iconJs: "/img/JS.png",
+    iconPs: "/img/PS.png",
+    iconAi: "/img/AI.png",
+    iconId: "/img/Id.png",
+
+    activeTab: "webdesign",
+webdesignCards: [
         {
           image: "/img/RSOK.jpg",
           title: "Rold Skov <br /> Orienteringsklub",
-          description: "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
-          link: "/rsok"
+          caption: "Kør musen over mig ",
+          description:
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub (herefter RSOK), som er en aktiv orienteringsløbeklub. Klubben har en stærk tilknytning til den naturskønne skov og tilbyder aktiviteter, der kombinerer motion, mental udfordring og socialt fællesskab",
+          route: "/rsok"
         },
         {
           image: "/img/AaKFUM.jpg",
           title: "KFUM Aalborg",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
-        }
+          caption: "Kør musen over mig ",
+          description:
+            "KFUM Aalborg er en ungdomsorganisation med fokus på fællesskab og aktiviteter.",
+          route: "/kfum"
+        },
+        
+        
       ]
-    };
+    
   }
-};
+}
+
+    }
 </script>
 
 
+export default {
+  name: "Card",
+  props: {
+    card: {
+      type: Object,
+      required: true
+    }
+  }
+};
 
 <template>
   <main>
@@ -89,6 +107,9 @@ export default {
 
     <section class="kompetanceSektion">
       <h2 class="Overskrift">Kompetancer</h2>
+      <p>Jeg har erfaring med webudvikling og kan arbejde med HTML, CSS, JavaScript, WordPress og Vue, hvilket gør mig i stand til at bygge både statiske og dynamiske hjemmesider.  </p>
+      <p>Fra min tidligere uddannelse i grafisk design har jeg også solide kompetencer i Adobe Photoshop, Illustrator og InDesign, som jeg bruger til visuel kommunikation, grafisk layout og designopgaver.</p>
+      <p>Kombinationen af tekniske og kreative færdigheder giver mig mulighed for både at udvikle funktionelle løsninger og skabe visuelt gennemarbejdede resultater.</p>
       <div class="KSlogoer">
         <div class="mmdIkoner">
           <img :src="iconHtml" alt="HTML ikon" />
@@ -102,10 +123,22 @@ export default {
         </div>
       </div>
     </section>
-   <section>
-<PortfolioCards :cards="homeCards" />
+    
 
-  </section>
+    
+    <section class="portfolioSektion BackgroundColorGreen card-section ">
+      
+      <h2 class="Overskrift">Nyeste cases</h2>
+      <div class="card-grid">
+       <div class="flip-card" v-for="(card, index) in webdesignCards" :key="index">
+        <Card :card="card" />
+      </div>
+        <router-link to="/portfolio">
+          <img class="PointerStar" src="/img/StarWTekst.png" alt="Se mere stjerne" />
+        </router-link>
+      </div>
+    </section>
+
   </main>
   <footer>
   </footer>
@@ -114,5 +147,7 @@ export default {
 
 
 <style scoped>
-/* Optional scoped styles */
+.PointerStar{
+  width: 90%;
+}
 </style>
