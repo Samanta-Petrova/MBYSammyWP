@@ -110,16 +110,22 @@ export default {
       <p>Jeg har erfaring med webudvikling og kan arbejde med HTML, CSS, JavaScript, WordPress og Vue, hvilket gør mig i stand til at bygge både statiske og dynamiske hjemmesider.  </p>
       <p>Fra min tidligere uddannelse i grafisk design har jeg også solide kompetencer i Adobe Photoshop, Illustrator og InDesign, som jeg bruger til visuel kommunikation, grafisk layout og designopgaver.</p>
       <p>Kombinationen af tekniske og kreative færdigheder giver mig mulighed for både at udvikle funktionelle løsninger og skabe visuelt gennemarbejdede resultater.</p>
-      <div class="KSlogoer">
-        <div class="mmdIkoner">
+      <div class="scroll-wrapper">
+        <div class="scroll-track">
+          <div class="scroll-content">
           <img :src="iconHtml" alt="HTML ikon" />
           <img :src="iconCss" alt="CSS ikon" />
           <img :src="iconJs" alt="JS ikon" />
-        </div>
-        <div class="gdtIkoner">
           <img :src="iconPs" alt="Photoshop ikon" />
           <img :src="iconAi" alt="Illustrator ikon" />
           <img :src="iconId" alt="InDesign ikon" />
+           <img :src="iconHtml" alt="HTML ikon" />
+          <img :src="iconCss" alt="CSS ikon" />
+          <img :src="iconJs" alt="JS ikon" />
+          <img :src="iconPs" alt="Photoshop ikon" />
+          <img :src="iconAi" alt="Illustrator ikon" />
+          <img :src="iconId" alt="InDesign ikon" />
+          </div>
         </div>
       </div>
     </section>
@@ -148,6 +154,39 @@ export default {
 
 <style scoped>
 .PointerStar{
-  width: 90%;
+  width: 300px;
+  padding: 20px;
 }
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 80px;
+  animation: scrollLoop 30s linear infinite;
+}
+
+.scroll-content img {
+  height: 100px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 </style>

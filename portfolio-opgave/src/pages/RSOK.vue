@@ -1,14 +1,38 @@
 
 <script>
+import Card from '../components/Card.vue';
+
 export default {
   name: "RSOK",
+  components: {
+    Card
+  },
   data() {
     return {
-      activeTab: "problem"
-    };
+      activeTab: "problem",
+      webdesignCards: [
+        {
+          image: "/img/RSOK.jpg",
+          title: "Rold Skov <br /> Orienteringsklub",
+          caption: "Kør musen over mig ",
+          description:
+            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
+          route: "/rsok"
+        },
+        {
+          image: "/img/AaKFUM.jpg",
+          title: "KFUM Aalborg",
+          caption: "Kør musen over mig ",
+          description:
+            "KFUM Aalborg er en ungdomsorganisation med fokus på fællesskab og aktiviteter.",
+          route: "/kfum"
+        }
+      ]
+    }
   }
-};
+}
 </script>
+
 
 <template>
 
@@ -24,7 +48,7 @@ export default {
 RSOK’s håber at inspirere flere til at opdage glæden ved orienteringsløb og blive en del af fællesskabet. Rsok håber at opnå dette ved hjælp af en mere brugervenlig hjemmeside, der tydeligt formidler klubbens værdier og aktiviteter,</p>
   </div>
   
-<img class="pointer" src="/img/The-star-piont-down.png" alt="">
+<img class="pointer" src="/img/StarPointDown.png" alt="">
 </div>
   </section>
   <section class="PortfolioTaps">
@@ -147,7 +171,18 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
     </div>
   </div>
 </section>
-
+<section class="portfolioSektion BackgroundColorGreen card-section ">
+      
+      <h2 class="Overskrift">Nyeste cases</h2>
+      <div class="card-grid">
+       <div class="flip-card" v-for="(card, index) in webdesignCards" :key="index">
+        <Card :card="card" />
+      </div>
+        <router-link to="/portfolio">
+          <img class="PointerStar" src="/img/StarWTekst.png" alt="Se mere stjerne" />
+        </router-link>
+      </div>
+    </section>
 </template>
 
 <style scoped>

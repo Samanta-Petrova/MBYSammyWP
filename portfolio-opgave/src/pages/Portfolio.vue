@@ -81,7 +81,7 @@ export default {
           </p>
         </div>
       
-          <img class="pointer" src="/img/ThePointingStar.png" alt="" />
+          <img class="pointer" src="/img/SratWhistle.png" alt="" />
        
       </div>
     </section>
