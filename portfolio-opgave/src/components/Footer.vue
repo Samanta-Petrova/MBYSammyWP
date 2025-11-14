@@ -31,6 +31,7 @@ export default {
 
 
 <style scoped>
+
 .site-footer {
   background-color: #817696;
   color: white;
@@ -39,8 +40,9 @@ export default {
   margin-top: 60px;
 }
 
+
 .footer-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 

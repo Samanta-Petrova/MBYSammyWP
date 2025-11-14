@@ -6,7 +6,7 @@ export default {
   components: {
     Card
   },
-  data() {
+  data() { 
     return {
       activeTab: "webdesign",
       webdesignCards: [
@@ -76,7 +76,7 @@ export default {
           </p>
         </div>
       
-          <img class="pointer" src="/img/SratWhistle.png" alt="" />
+          <img class="pointer" src="/img/SratWhistle.png" alt=" Stjerne maskot" />
        
       </div>
     </section>

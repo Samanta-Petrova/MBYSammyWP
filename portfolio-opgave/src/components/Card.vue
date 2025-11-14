@@ -1,5 +1,6 @@
 
 <script>
+// Denne del definere en vue komponent der bliver importeret og brugt i andre side/komponentr 
 export default {
   name: "Card",
   props: {
@@ -20,7 +21,7 @@ export default {
       <img :src="card.image" alt="Case billede" />
       <h2 v-html="card.title"></h2>
       <p class="Lillecaption">
-        {{ card.caption }} <i class="fa-solid fa-chevron-right"></i>
+        {{ card.caption }}
       </p>
     </div>
     <div class="flip-card-bagside">
@@ -30,5 +31,5 @@ export default {
 </template>
 
 <style scoped>
-/* */
+/* Styling i styling.css*/
 </style>

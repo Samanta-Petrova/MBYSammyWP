@@ -61,7 +61,7 @@ export default {
     <h2 class="Overskrift">Problem</h2>
     <p>I dagens esports-verden er der mange spillere og hold, men det kan være svært at finde professionelle og stilrene platforme, der præsenterer spilleres informationer på en overskuelig måde. Mange eksisterende esports-hjemmesider er enten visuelt overfyldte eller mangler en klar struktur, hvilket gør det udfordrende for besøgende at finde relevante oplysninger hurtigt. Desuden er kontaktinformationer ofte skjulte eller svære at få adgang til, hvilket skaber barrierer for samarbejde, sponsorater eller faninteraktion. Der er derfor et behov for en hjemmeside, der kombinerer et stilrent design med nem adgang til alle væsentlige oplysninger om en spiller.</p>
     <div class="problemetKFUM">
-      <img src="/img/DorligEksempel.png" alt="">
+      <img src="/img/DorligEksempel.png" alt=" Eksempel på esports side ">
     </div>
   </div>
 
@@ -84,17 +84,17 @@ Målgruppen kan segmenteres på flere niveauer. Demografisk er den primært mell
 <p>På forsiden præsenteres spilleren med et stort og centralt portræt samt tydelige oplysninger som navn, esports-alias, rolle og nationalitet. Denne hurtige identifikation er vigtig både for fans, der vil lære spilleren at kende, og for professionelle aktører, der skal kunne danne sig et overblik inden for få sekunder. Under dette findes sektionen Højdepunkter, som visualiserer spillerens achievements gennem store billedkort. Det gør det muligt for besøgende at skimme resultater visuelt, hvilket passer godt til målgruppens digitale adfærd og forventning om hurtig overblik.</p>
     <div class="skitser">
       <h3>Forside</h3>
-      <img src="/img/LandingPageMagnus.png" alt="">
+      <img src="/img/LandingPageMagnus.png" alt=" landing page ">
       </div>
       <p>Karrieresiden er struktureret i mindre tekstblokke afbrudt af billeder, logoer og ikoner fra de teams, spilleren har repræsenteret. Denne kombination af tekst og grafik gør indholdet mere fremkommeligt for en målgruppe, som ofte foretrækker visuelt understøttet information frem for lange tekstafsnit. Billeder af holdsejre, teamlogoer og kendte esports-symboler øger troværdigheden, fordi de signalerer professionalisme og dokumenterer spillerens faktiske erfaring.</p>
       <h3>Karriere</h3>
       <div class="skitser sammen">
-      <img src="/img/CareerMagnus.png" alt="">
+      <img src="/img/CareerMagnus.png" alt="Karriere side ">
       </div>
       <h3>Kontakt</h3>
       <p>Kontaktsiden er designet med en stor og overskuelig kontaktboks, som ligger tydeligt i forgrunden oven på det samme genkendelige baggrundsbillede. Dette imødekommer et af de centrale problemer i eksisterende esports-hjemmesider: kontaktinformationer er ofte skjulte eller svære at finde. Her er kontaktfeltet placeret direkte og tilgængeligt, hvilket gør det let for scouts, journalister og sponsorer at etablere kontakt uden friktion. Ikonet for kommunikation understreger funktionen visuelt, hvilket igen tiltaler brugere, der orienterer sig visuelt og hurtigt.</p>
       <div class="skitser">
-      <img src="/img/ContactMagnus.png" alt="">
+      <img src="/img/ContactMagnus.png" alt="Kontakt side">
     </div>
   </div>
 </section>

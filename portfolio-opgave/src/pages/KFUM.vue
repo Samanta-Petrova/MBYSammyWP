@@ -26,7 +26,7 @@ export default {
     </p>
   </div>
   
-<img class="pointer" src="/img/The-star-piont-down.png" alt="">
+<img class="pointer" src="/img/The-star-piont-down.png" alt="Stjerne maskot">
 </div>
   </section>
   <section class="PortfolioTaps">
@@ -81,30 +81,30 @@ export default {
     <h2 class="Overskrift">Problem</h2>
     <p>Klubbens nuværende hjemmeside er bygget på en standardplatform, der bruges af mange andre klubber, hvilket gør siden uoverskuelig og ensformig. Dette kan gøre det svært for klubben at fastholde eksisterende medlemmer og tiltrække nye, især i konkurrence med andre fodboldklubber i storbyen. Vi startede derfor med at undersøge hjemmesidens struktur og indhold for at identificere de vigtigste problemområder. Analysen viste, at siden både visuelt og indholdsmæssigt virkede kompakt og uoverskuelig, hvilket dannede udgangspunkt for det videre arbejde.</p>
     <div class="problemetKFUM">
-      <img src="/img/KFUMproblem.png" alt="">
+      <img src="/img/KFUMproblem.png" alt="Kfum hjemmesside før redesign ">
     </div>
   </div>
 
   <div v-show="activeTab === 'research'" class="tab-content">
     <h2 class="Overskrift">Research</h2>
     <p>På baggrund af problemidentifikationen gennemførte vi research med fokus på børnefamilier, som udgør en central målgruppe. Vi lavede segmentering, desk research og kvalitative interviews med forældre for at forstå deres behov og adfærd. Resultaterne viste, at forældrene prioriterer, at børnene oplever socialt fællesskab, pædagogiske trænere og et inkluderende miljø. Disse indsigter blev grundlaget for analysen og designarbejdet, da vi nu vidste, hvilke funktioner og informationer der var mest relevante at fremhæve på den nye hjemmeside.</p>
-    <img src="/img/TematiskAnalyse.png" alt="">
+    <img src="/img/TematiskAnalyse.png" alt="Tematisk analyse af interview">
   </div>
 
   <div v-show="activeTab === 'analyse'" class="tab-content">
     <h2 class="Overskrift">Analyse</h2>
     <p>Med udgangspunkt i researchen analyserede vi den eksisterende hjemmeside for at finde konkrete forbedringsmuligheder. Vi lavede heuristisk evaluering, kundemøde og Empathy Maps, og gennemgik alt tekst- og billedmateriale i et content inventory. Analysen viste, at hjemmesiden skulle gøres mere intuitiv, overskuelig og personlig, samtidig med at klubbens værdier som fællesskab og inklusion skulle fremhæves. De samlede indsigter dannede fundamentet for designprocessen og bestemte hvilke elementer og funktioner, der skulle prioriteres i prototyperne.</p>
     <p>Som første del af analysen gennemførte gruppen en heuristisk evaluering for at finde potentielle problemer på brugergrænsefladen. Evalueringen blev udført fælles, så vi kunne identificere de mest centrale problemområder, som efterfølgende kunne drøftes nærmere med klubben. Dette gjorde det muligt både at forstå, hvilke elementer på siden der skabte udfordringer for brugerne, og hvilke der var bevidste valg fra klubbens side.</p>
-      <img src="/img/Heuristik.png" alt="">
+      <img src="/img/Heuristik.png" alt="Heruistisk analyse af hjemmesiden ">
     
       <p>Som yderligere del af analysen blev der udviklet et Empathy Map for hver af interviewdeltagerne for at få dybere indsigt i deres behov og oplevelser. Deltagernes svar blev opdelt i kategorierne ”Think”, ”Do”, ”Say” og ”Feel”, så vi kunne kortlægge deres tanker, handlinger, udtalelser og følelser i forhold til klubbens hjemmeside.
 </p>
 <p>Når denne del var udfyldt, blev ”Pains” og ”Gains” tilføjet for at identificere frustrationer og forhindringer samt de elementer, der allerede fungerede godt eller ønskedes tilføjet. Til sidst blev ”User Need Insights” udfyldt, hvor både de første og anden del af metoden blev analyseret for at opsummere de vigtigste brugerbehov.</p>
 <p>Resultatet af Empathy Maps viste tydeligt, at fælles for alle brugere var ønsket om, at deres børn bliver en del af et socialt fællesskab. Disse indsigter dannede et solidt fundament for det videre arbejde med design og test, da de konkret pegede på, hvilke funktioner og informationer der var mest relevante for målgruppen.</p>
     <div class="EmpatyMap">
-      <img src="/img/EmpathyMapHELE.png" alt="">
-      <img src="/img/Gains.png" alt="">
-      <img src="/img/Pains.png" alt="">
+      <img src="/img/EmpathyMapHELE.png" alt=" Hele empathy map">
+      <img src="/img/Gains.png" alt="Gains fra empathy map">
+      <img src="/img/Pains.png" alt=" Pins fra empaty map">
     </div>
   </div>
 
@@ -114,17 +114,17 @@ export default {
 
     <div class="skitser">
       <h3>Crazy 8-metoden</h3>
-      <img src="/img/Crazy8.png" alt="">
+      <img src="/img/Crazy8.png" alt=" Crazy 8">
       </div>
       <h3>Skitser / Heat Mapping</h3>
       <div class="skitser sammen">
-      <img src="/img/SkitserKFUM1.png" alt="">
+      <img src="/img/SkitserKFUM1.png" alt=" Skitse 1">
       <img src="/img/Skitse2.png
-      " alt="">
+      " alt="Skitse 2">
       </div>
       <div class="skitser">
       <h3>Wireframes</h3>
-      <img src="/img/Wireframes.png" alt="">
+      <img src="/img/Wireframes.png" alt="Wireframe ">
     </div>
   </div>
 
@@ -134,11 +134,11 @@ export default {
     <div class="liste skitser">
       <ul>
         <li><p>Før</p></li>
-        <img src="/img/TATFoer.png" alt="">
-        <img src="/img/MenyBF.png" alt="">
+        <img src="/img/TATFoer.png" alt=" Think aloud test før ændringer på wireframe ">
+        <img src="/img/MenyBF.png" alt="Think aloud test førændringer på design">
         <li><p>Efter</p></li>
-        <img src="/img/TATEfter.png" alt="">
-        <img src="/img/MenyEF.png" alt="">
+        <img src="/img/TATEfter.png" alt=" Think aloud test efter ændringer wireftame ">
+        <img src="/img/MenyEF.png" alt="hink aloud test efter ændringer produkt">
       </ul>
     </div>
   </div>
@@ -147,8 +147,8 @@ export default {
     <h2 class="Overskrift">Produkt</h2>
     <p>Den endelige hjemmeside blev implementeret i WordPress med tilpasset CSS, billeder og farver, så den både fremhæver klubbens værdier og er nem at administrere. Alle design- og indholdsvalg bygger direkte på den research, analyse og test, vi har gennemført, hvilket sikrer, at hjemmesiden matcher brugernes behov og klubbens mål. Resultatet er en intuitiv, overskuelig og visuelt tiltalende hjemmeside, der kan fungere som model for andre klubber og samtidig styrker fællesskabet og inklusionen i KFUM.</p>
     <div class="skitser">
-      <img src="/img/KFUMForside.png" alt="">
-      <img src="/img/Forside2.png" alt="">
+      <img src="/img/KFUMForside.png" alt="Kfum redesign 1">
+      <img src="/img/Forside2.png" alt=" Kfum redesign 1">
     </div>
   </div>
 </section>

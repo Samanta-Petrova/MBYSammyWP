@@ -1,4 +1,5 @@
 <script setup>
+// Importerer variabler som er min compunent 
 import { ref, onMounted } from 'vue'
 import PortfolioCards from "../components/PortfolioCards.vue"
 
@@ -8,8 +9,9 @@ const cardStackRejse = ref(null)
 const homeCards = ref([]) // or populate with actual card data
 
 
-// Function to apply card flipping logic to a stack
+// En hjælpefunktion, der får en card-stack ref og tilføjer interaktionslogik.
 const setupCardStack = (stackRef) => {
+  //Sikrer at card-stacken eksisterer i DOM’en og logger en fejl hvis HTML ikke matcher 
   if (!stackRef.value) {
     console.error('card-stack ikke fundet i DOM - check HTML.')
     return
@@ -18,24 +20,22 @@ const setupCardStack = (stackRef) => {
   const handleClick = () => {
     const topCard = stackRef.value.querySelector('.photo-card')
     if (!topCard) return
-
+// finder det øveste kort i stakken ved brug af .photo-card
+//Den stopper hvis der ikke findes en kort 
     topCard.classList.add('moving')
-
+//Tilføjer en css klasse der tarter en animation - moving 
     setTimeout(() => {
       topCard.classList.remove('moving')
       stackRef.value.appendChild(topCard)
     }, 520)
   }
+//Normalvis ville man ikke bruge eventlistener i vueman ville normalvis bruge noget i stil med @cklick eller @keydown men det virkede ikke og ingen chat botter hjalp
+// men det tilføjer event der hedder click så stakken bliver klickbar
+ stackRef.value.addEventListener('click', handleClick) 
 
-  stackRef.value.addEventListener('click', handleClick)
-
-  document.addEventListener('keydown', (ev) => {
-    if (ev.key === 'ArrowRight' || ev.key === ' ') {
-      handleClick()
-    }
-  })
+//
 }
-
+//Når kompunenten er fuldt mounted (betyder at det er færdig opsat i html) inden flip funktionen for begge stakke bliver opsat
 onMounted(() => {
   setupCardStack(cardStackMusik)
   setupCardStack(cardStackRejse)
@@ -65,7 +65,7 @@ onMounted(() => {
           <div class="ProfileCard">
             <img
               src="/img/ProfilImg.JPG"
-              alt=""
+              alt="Profil billede"
               class="CardBillede"
             />
             <h2>Samanta Petrova</h2>
@@ -78,7 +78,7 @@ onMounted(() => {
           <img
             class="OMStjerne"
             src="/img/ThestaropenArms.png"
-            alt=""
+            alt="Stjerne maskot med åbne arme "
           />
           <p>
             Jeg har store planer for min fremtid, hvor jeg drømmer om at
@@ -106,7 +106,7 @@ onMounted(() => {
             <div class="photo-card">
               <img class="musikogrejse"
                 src="/img/PostMalone1.JPEG"
-                alt=""
+                alt=" Billede fra Post Malone koncert"
               />
               <h2 class="caption">Post Malone</h2>
               <p class="Lillecaption">Tryk på mig</p>
@@ -115,7 +115,7 @@ onMounted(() => {
             <div class="photo-card">
               <img class="musikogrejse"
                 src="/img/Gobs.JPG"
-                alt=""
+                alt="Billede fra Gobs koncert"
               />
               <h2 class="caption">Gobs</h2>
               <p class="Lillecaption">Tryk på mig</p>
@@ -124,14 +124,14 @@ onMounted(() => {
             <div class="photo-card">
               <img class="musikogrejse"
                 src="/img/Gilli.JPG"
-                alt=""
+                alt="Billede fra Gilli koncert"
               />
               <h2 class="caption">Gilli</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
             <div class="photo-card">
-              <img class="musikogrejse" src="/img/UAK.JPG" alt="" />
+              <img class="musikogrejse" src="/img/UAK.JPG" alt="Billede fra Ud af Kontrolkoncert" />
               <h2 class="caption">Ud af Kontrol</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
@@ -142,35 +142,35 @@ onMounted(() => {
         <div class="RejserMedBilleder">
           
           <div class="card-stack" ref="cardStackRejse">
-            <div class="photo-card-ROM">
+            <div class="photo-card">
               <img
                 src="/img/Sigulda.jpeg"
-                alt=""
+                alt="Byen Sigulda i Letland "
               />
               <h2 class="caption">Letland</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
-            <div class="photo-card-ROM">
+            <div class="photo-card">
               <img
                 src="/img/Tyrkiet1.jpeg"
-                alt=""
+                alt="Billede af tyrkiet"
               />
               <h2 class="caption">Tyrkiet</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
-            <div class="photo-card-ROM">
+            <div class="photo-card">
               <img
                 src="/img/Rhodos.jpeg"
-                alt=""
+                alt="Billede af grækenland"
               />
               <h2 class="caption">Grækenland</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
-            <div class="photo-card-ROM">
-              <img src="/img/Tyrkiet2.jpeg" alt="" />
+            <div class="photo-card">
+              <img src="/img/Tyrkiet2.jpeg" alt="Billede af tyrkiet" />
               <h2 class="caption">Tyrkiet</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
@@ -182,12 +182,13 @@ onMounted(() => {
           </div>
         </div>
       </section>
+      <!-- her bruges den importerede komponent-->
       <section><PortfolioCards :cards="homeCards" /></section>
     </main>
 </template>
 
 <style scoped>
-
+/* Det meste af min css er i style.css */
 </style>
 
 

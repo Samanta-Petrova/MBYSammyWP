@@ -13,11 +13,13 @@ export default {
 
 <template>
   <main>
+    <section>
   <h2 class="LillaBoksOverskrift">Kontakt</h2>
   <div class="kontakt-page">
     <ContactForm />
-    <img class="star" src="/img/ThestaropenArms.png" alt="">
+    <img class="star" src="/img/StarJump.png" alt="Stjerne maskot der hopper">
   </div>
+  </section>
 </main>
 </template>
 

@@ -6,6 +6,7 @@ export default {
   components: {
     Card
   },
+  //Jeg fik importeret ikoner på den her måde inden jeg fik det andet at virke, jeg havde desværre ikke overskud til at ændre det 
   data() {
   return {
     iconLocation: "/img/lokation.png",
@@ -44,18 +45,6 @@ webdesignCards: [
 
     }
 </script>
-
-
-export default {
-  name: "Card",
-  props: {
-    card: {
-      type: Object,
-      required: true
-    }
-  }
-};
-
 <template>
   <main>
     <section class="IfoForside">
@@ -81,17 +70,15 @@ export default {
             projekt et unikt udtryk med en stærk æstetisk identitet.
           </p>
         </div>
-
         <div class="ProfileCard">
           <img
               src="/img/ProfilImg.JPG"
-              alt=""
+              alt="Profil billede"
               class="CardBillede"
             />
           <h2>Samanta Petrova</h2>
           <p>Ux/Ui og grafisk designer</p>
         </div>
-
         <div class="Introikoner">
           <div id="lokation">
             <img :src="iconLocation" alt="lokation ikon" />
@@ -104,9 +91,8 @@ export default {
         </div>
       </div>
     </section>
-
     <section class="kompetanceSektion">
-      <h2 class="Overskrift">Kompetancer</h2>
+      <h2 class="Overskrift LillaBoksOverskrift">Kompetancer</h2>
       <p>Jeg har erfaring med webudvikling og kan arbejde med HTML, CSS, JavaScript, WordPress og Vue, hvilket gør mig i stand til at bygge både statiske og dynamiske hjemmesider.  </p>
       <p>Fra min tidligere uddannelse i grafisk design har jeg også solide kompetencer i Adobe Photoshop, Illustrator og InDesign, som jeg bruger til visuel kommunikation, grafisk layout og designopgaver.</p>
       <p>Kombinationen af tekniske og kreative færdigheder giver mig mulighed for både at udvikle funktionelle løsninger og skabe visuelt gennemarbejdede resultater.</p>
@@ -129,11 +115,7 @@ export default {
         </div>
       </div>
     </section>
-    
-
-    
     <section class="portfolioSektion BackgroundColorGreen card-section ">
-      
       <h2 class="Overskrift">Nyeste cases</h2>
       <div class="card-grid">
        <div class="flip-card" v-for="(card, index) in webdesignCards" :key="index">
@@ -144,19 +126,12 @@ export default {
         </router-link>
       </div>
     </section>
-
   </main>
-  <footer>
-  </footer>
 </template>
 
 
 
 <style scoped>
-.PointerStar{
-  width: 300px;
-  padding: 20px;
-}
 .scroll-wrapper {
   overflow: hidden;
   width: 100%;

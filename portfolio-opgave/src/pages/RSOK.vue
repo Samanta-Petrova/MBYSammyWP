@@ -7,7 +7,7 @@ export default {
   components: {
     Card
   },
-  data() {
+  data() { 
     return {
       activeTab: "problem",
       webdesignCards: [
@@ -48,7 +48,7 @@ export default {
 RSOK’s håber at inspirere flere til at opdage glæden ved orienteringsløb og blive en del af fællesskabet. Rsok håber at opnå dette ved hjælp af en mere brugervenlig hjemmeside, der tydeligt formidler klubbens værdier og aktiviteter,</p>
   </div>
   
-<img class="pointer" src="/img/StarPointDown.png" alt="">
+<img class="pointer" src="/img/StarPointDown.png" alt=" Stjerne maskot">
 </div>
   </section>
   <section class="PortfolioTaps">
@@ -102,8 +102,8 @@ RSOK’s håber at inspirere flere til at opdage glæden ved orienteringsløb og
 På baggrund af denne problembeskrivelse er vi nået frem til følgende problemformulering.
 </p>
     <div class="problemet">
-    <img src="/img/RSOKProblem1.png" alt="">
-    <img src="/img/RSOKProblem2.png" alt=""></img>
+    <img src="/img/RSOKProblem1.png" alt="Rsok første før billede">
+    <img src="/img/RSOKProblem2.png" alt="Rsok anden før billede"></img>
     </div>
   </div>
 
@@ -114,9 +114,9 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
 </h3>
 <div class="liste">
 <ul>
-  <li><img class="blomstG" src="/img/blomstG.png" alt="">Interesserede, men uerfarne – personer, der er nysgerrige, men ser sporten som kompliceret.</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt=""> Naturen som aktiviteten i sig selv – brugere, der søger ro og naturoplevelser.</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt="">Aktiviteter i naturen – dem, der kombinerer motion, natur og fællesskab.</li>
+  <li><img class="blomstG" src="/img/blomstG.png" alt="Liste blomst">Interesserede, men uerfarne – personer, der er nysgerrige, men ser sporten som kompliceret.</li>
+  <li> <img class="blomstG" src="/img/blomstG.png" alt="Liste blomst"> Naturen som aktiviteten i sig selv – brugere, der søger ro og naturoplevelser.</li>
+  <li> <img class="blomstG" src="/img/blomstG.png" alt="Liste blomst">Aktiviteter i naturen – dem, der kombinerer motion, natur og fællesskab.</li>
 </ul>
 </div>
 <p>Disse segmenter danner grundlag for designet af en brugervenlig og målrettet hjemmeside, der både skal tiltrække nye medlemmer og fastholde eksisterende.</p>
@@ -130,19 +130,20 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
 </p>
 <div class="liste">
 <ul>
-  <li><img class="blomstG" src="/img/blomstG.png" alt="">Barrierer: Tidsmangel, særligt hos familier med små børn, og bekymring for ikke at passe ind i foreningsfællesskabet.</li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt=""> Motivation: Ønske om kvalitetstid i naturen, fællesskab og let adgang til at prøve sporten.
+  <li><img class="blomstG" src="/img/blomstG.png" alt="Liste blomst"><p>Barrierer: Tidsmangel, særligt hos familier med små børn, og bekymring for ikke at passe ind i foreningsfællesskabet.</p></li>
+  <li> <img class="blomstG" src="/img/blomstG.png" alt="Liste blomst"> <p>Motivation: Ønske om kvalitetstid i naturen, fællesskab og let adgang til at prøve sporten.</p>
 </li>
-  <li> <img class="blomstG" src="/img/blomstG.png" alt="">Behov: Enkle opstartsmuligheder og begyndervenlige tilbud.</li>
+  <li> <img class="blomstG" src="/img/blomstG.png" alt="Liste blomst"> <p>
+    Behov: Enkle opstartsmuligheder og begyndervenlige tilbud.</p></li>
 </ul>
 </div>
 <div>
   <h3>Affinity diagram</h3>
   <p>Der udføres affinity diagram for at gruppere og organisere data. Data anvendt fremkommer af intervieaws, samt indhold fra tidligere hjemmeside. </p>
-  <img src="/img/RSOKAffinity.png" alt="">
+  <img src="/img/RSOKAffinity.png" alt="Affinity diagram">
   <p>Disse grupperinger bliver kategoriseret og danner grundlag for udviklingen af et content sitemap, som efterfølgende anvendes til at strukturere navigationen på hjemmesiden.</p>
 
-  <img src="/img/RSOKNav.png" alt="">
+  <img src="/img/RSOKNav.png" alt="Rsok content sitemap ">
 </div>
   </div>
 
@@ -151,14 +152,13 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
     <h3>Skitser</h3>
     <p>Der arbejdes med skitser som et visuelt værktøj til at eksperimentere med forskellige placeringer af elementer som navigation, indhold og call-to-action-knapper. Skitserne er enkle og hurtigt producerede, hvilket gør det nemt at afprøve idéer. De anvendes også til at præsentere konceptet på papir og sikre, at idéen stemmer overens med ønsket om en enkel og overskuelig løsning i projektet.</p>
     <div class="skitser">
-    <img src="/img/RSOKSkitse1.png" alt="">
-    <img src="/img/RSOKSkitse1.png" alt=""></img>
+    <img src="/img/RSOKSkitse1.png" alt="Skitse">
     </div>
     <h3>Wireframes</h3>
     <p>Der anvendes wireframes, som er en mere detaljeret og struktureret version af skitsen. Wireframes definerer de primære elementer og funktioner på siden uden at fokusere på visuelle detaljer som farver, skrifttyper og billeder.</p>
     <div class="skitser">
-      <img src="/img/RSOKWF1.png" alt="">
-      <img src="/img/RSOKWF2.png" alt="">
+      <img src="/img/RSOKWF1.png" alt="Wireframe 1">
+      <img src="/img/RSOKWF2.png" alt="Wireframe 2">
     </div>
   </div>
 
@@ -166,8 +166,8 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
     <h2 class="Overskrift">Produkt</h2>
     <p>Ved at arbejde med disse metoder er der opnået et resultat, der resulterer i en mere overskuelig og brugervenlig side. Dette gør det nemmere og hurtigere for brugeren at finde de nødvendige informationer. Det overordnede design er blevet simplere, samtidig med at virksomhedens identitet og værdier er bevaret.</p>
     <div class="skitser">
-      <img src="/img/RSOKProdukt1.png" alt="">
-      <img src="/img/RSOKProdukt2.png" alt="">
+      <img src="/img/RSOKProdukt1.png" alt="Produkt side 1">
+      <img src="/img/RSOKProdukt2.png" alt="Produkt side 2">
     </div>
   </div>
 </section>
@@ -196,6 +196,9 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
 .blomstG{
   width: 30px;
   padding: 10px;
+}
+.liste p{
+  font-size: 1.2rem;
 }
 .liste ul {
   list-style-type: none;
