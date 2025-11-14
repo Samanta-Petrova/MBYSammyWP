@@ -76,7 +76,7 @@ p{
 
 .infoSektion p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
   line-break: 65ch;
@@ -132,9 +132,11 @@ width: 437px;
 }
 
 .ProfileCard p {
-  font-size: 1rem;
+  
+  font-size: 1.5rem;
   color: #666;
   margin-top: 5px;
+  text-align: center;
 }
 
 /*Kompetance sektionen */
@@ -267,12 +269,11 @@ width: 437px;
 /* Bagsiden */
 .flip-card-bagside {
   background: white;
+  display: flex;
   color: black;
   transform: rotateY(180deg);
-  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: start;
   padding-left: 10px;
   padding-right: 5px;
   border: solid 1px var(--BGGreen);
@@ -343,6 +344,8 @@ width: 437px;
 .MusikMedBilleder {
   display: flex;
   align-items: center;
+  margin-bottom: 300px;
+  margin-top: 40px;
 }
 
 .MusikTekst {
@@ -386,10 +389,23 @@ width: 437px;
   perspective: 1000px;
   margin-right: 150px;
   margin-left: var(--BiggerPadding);
+  margin-top: -20px;
 }
 
 /* INDIVIDUELT CARD */
 .photo-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #8B9676;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  transform: rotate(var(--rotate, 0deg)) translateY(var(--y, 0px));
+  transition: all 0.5s ease;
+}
+.photo-card-ROM {
   position: absolute;
   top: 0;
   left: 0;
@@ -407,6 +423,17 @@ width: 437px;
   padding-left: 25px;
   padding-bottom: 10px;
   padding-top: 25px;
+  object-fit: cover;
+}
+.photo-card-ROM img {
+  width: 300px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  object-fit: cover;
+}
+.musikogrejse {
+  height: 300px;
   object-fit: cover;
 }
 

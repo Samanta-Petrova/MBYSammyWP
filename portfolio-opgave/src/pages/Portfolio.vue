@@ -27,33 +27,28 @@ export default {
           route: "/kfum"
         },
         {
-          image: "/img/MagiskJul.jpg",
-          title: "Magnus Bonde <br/> League of Legends",
+          image: "/img/LandingPageMagnus.png",
+          title: "Magnus Bonde ",
           caption: "Kør musen over mig ",
           description:
             "Jeg har udviklet en portfolioside for en semi-professionel League of Legends-spiller. Formålet med projektet var at skabe en overskuelig og brugervenlig platform, hvor besøgende nemt kunne finde alle relevante informationer om spilleren.",
+            
           route: "/magnus"
         },
-        {
-          image: "/img/MagiskJul.jpg",
-          title: "Blokhus<br/>Magisk jul",
-          caption: "Kør musen over mig ",
-          description:
-            "En moderne app designet til at forbedre brugeroplevelsen.",
-          route: "/ny-app"
-        }
+        
+        
       ],
       grafiskCards: [
         {
-          image: "/img/IMG_0068.JPG",
-          title: "Plakatdesign",
+          image: "/img/Møllefestival.png",
+          title: "Museum for <br/> Forsyning og bæredygtighed",
           caption: "Kør musen over mig",
           description:
             "Et kreativt plakatdesign til en lokal begivenhed."
         },
         {
-          image: "/img/IMG_0068.JPG",
-          title: "Logo koncept",
+          image: "/img/Møllehistorie.png",
+          title: "Dansk center <br/> for møllehistorie",
           caption: "Kør musen over mig",
           description:
             "Et minimalistisk logo designet til en startup."

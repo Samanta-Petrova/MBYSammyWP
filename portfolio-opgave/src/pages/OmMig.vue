@@ -104,8 +104,8 @@ onMounted(() => {
           </div>
           <div class="card-stack" ref="cardStackMusik">
             <div class="photo-card">
-              <img
-                src=""
+              <img class="musikogrejse"
+                src="/img/PostMalone1.JPEG"
                 alt=""
               />
               <h2 class="caption">Post Malone</h2>
@@ -113,26 +113,26 @@ onMounted(() => {
             </div>
 
             <div class="photo-card">
-              <img
-                src=""
+              <img class="musikogrejse"
+                src="/img/Gobs.JPG"
                 alt=""
               />
-              <h2 class="caption">Post Malone</h2>
+              <h2 class="caption">Gobs</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
             <div class="photo-card">
-              <img
-                src=""
+              <img class="musikogrejse"
+                src="/img/Gilli.JPG"
                 alt=""
               />
-              <h2 class="caption">Post Malone</h2>
+              <h2 class="caption">Gilli</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
             <div class="photo-card">
-              <img src="" alt="" />
-              <h2 class="caption">Post Malone</h2>
+              <img class="musikogrejse" src="/img/UAK.JPG" alt="" />
+              <h2 class="caption">Ud af Kontrol</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
           </div>
@@ -142,36 +142,36 @@ onMounted(() => {
         <div class="RejserMedBilleder">
           
           <div class="card-stack" ref="cardStackRejse">
-            <div class="photo-card">
+            <div class="photo-card-ROM">
               <img
-                src=""
+                src="/img/Sigulda.jpeg"
                 alt=""
               />
-              <h2 class="caption">Post Malone</h2>
+              <h2 class="caption">Letland</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
-            <div class="photo-card">
+            <div class="photo-card-ROM">
               <img
-                src=""
+                src="/img/Tyrkiet1.jpeg"
                 alt=""
               />
-              <h2 class="caption">Post Malone</h2>
+              <h2 class="caption">Tyrkiet</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
-            <div class="photo-card">
+            <div class="photo-card-ROM">
               <img
-                src=""
+                src="/img/Rhodos.jpeg"
                 alt=""
               />
-              <h2 class="caption">Post Malone</h2>
+              <h2 class="caption">Grækenland</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
 
-            <div class="photo-card">
-              <img src="" alt="" />
-              <h2 class="caption">Post Malone</h2>
+            <div class="photo-card-ROM">
+              <img src="/img/Tyrkiet2.jpeg" alt="" />
+              <h2 class="caption">Tyrkiet</h2>
               <p class="Lillecaption">Tryk på mig</p>
             </div>
           </div>
@@ -187,7 +187,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* */
+
 </style>
 
 

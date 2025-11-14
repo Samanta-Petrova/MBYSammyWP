@@ -1,3 +1,15 @@
+
+<script>
+export default {
+  name: "Card",
+  props: {
+    card: {
+      type: Object,
+      required: true
+    }
+  }
+};
+</script>
 <template>
   <component
     :is="card.route ? 'router-link' : 'div'"
@@ -12,22 +24,10 @@
       </p>
     </div>
     <div class="flip-card-bagside">
-      <p>{{ card.description }}</p>
+      <p>{{ card.description}}</p>
     </div>
   </component>
 </template>
-
-<script>
-export default {
-  name: "Card",
-  props: {
-    card: {
-      type: Object,
-      required: true
-    }
-  }
-};
-</script>
 
 <style scoped>
 /* */
