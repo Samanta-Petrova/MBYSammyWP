@@ -10,7 +10,7 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/portfolio', name: 'Portfolio', component: Portfolio },
   { path: '/kontakt', name: 'Kontakt', component: Kontakt },
-  { path: '/omMig', name: 'OmMig', component: OmMig },
+  { path: '/OmMig', name: 'OmMig', component: OmMig },
   { path: '/rsok', component: RSOK },
   { path: '/kfum', component: KFUM },
   { path: '/magnus', component: Magnus },

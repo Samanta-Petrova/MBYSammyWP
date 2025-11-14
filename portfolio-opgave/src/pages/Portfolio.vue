@@ -11,7 +11,7 @@ export default {
       activeTab: "webdesign",
       webdesignCards: [
         {
-          image: "/img/RSOK.jpg",
+          image: "./img/RSOK.jpg",
           title: "Rold Skov <br /> Orienteringsklub",
           caption: "Kør musen over mig ",
           description:
@@ -19,7 +19,7 @@ export default {
           route: "/rsok"
         },
         {
-          image: "/img/AaKFUM.jpg",
+          image: "./img/AaKFUM.jpg",
           title: "KFUM Aalborg",
           caption: "Kør musen over mig ",
           description:
@@ -27,7 +27,7 @@ export default {
           route: "/kfum"
         },
         {
-          image: "/img/LandingPageMagnus.png",
+          image: "./img/LandingPageMagnus.png",
           title: "Magnus Bonde ",
           caption: "Kør musen over mig ",
           description:
@@ -40,14 +40,14 @@ export default {
       ],
       grafiskCards: [
         {
-          image: "/img/Møllefestival.png",
+          image: "./img/Møllefestival.png",
           title: "Museum for <br/> Forsyning og bæredygtighed",
           caption: "Kør musen over mig",
           description:
             "Et kreativt plakatdesign til en lokal begivenhed."
         },
         {
-          image: "/img/Møllehistorie.png",
+          image: "./img/Møllehistorie.png",
           title: "Dansk center <br/> for møllehistorie",
           caption: "Kør musen over mig",
           description:

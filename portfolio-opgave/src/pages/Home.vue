@@ -6,22 +6,13 @@ export default {
   components: {
     Card
   },
-  //Jeg fik importeret ikoner på den her måde inden jeg fik det andet at virke, jeg havde desværre ikke overskud til at ændre det 
+  
   data() {
   return {
-    iconLocation: "/img/lokation.png",
-    iconLinkedIn: "/img/IN.png",
-    iconHtml: "/img/Html.png",
-    iconCss: "/img/CSS.png",
-    iconJs: "/img/JS.png",
-    iconPs: "/img/PS.png",
-    iconAi: "/img/AI.png",
-    iconId: "/img/Id.png",
-
     activeTab: "webdesign",
 webdesignCards: [
         {
-          image: "/img/RSOK.jpg",
+          image: "./img/RSOK.jpg",
           title: "Rold Skov <br /> Orienteringsklub",
           caption: "Kør musen over mig ",
           description:
@@ -29,7 +20,7 @@ webdesignCards: [
           route: "/rsok"
         },
         {
-          image: "/img/AaKFUM.jpg",
+          image: "./img/AaKFUM.jpg",
           title: "KFUM Aalborg",
           caption: "Kør musen over mig ",
           description:
@@ -81,11 +72,11 @@ webdesignCards: [
         </div>
         <div class="Introikoner">
           <div id="lokation">
-            <img :src="iconLocation" alt="lokation ikon" />
+            <img src="/img/lokation.png" alt="lokation ikon" />
             <p>Aalborg</p>
           </div>
           <div id="linkedIn">
-            <img :src="iconLinkedIn" alt="LinkedIn logo" />
+            <img src="/img/IN.png" alt="LinkedIn logo" />
             <p>Linked In</p>
           </div>
         </div>
@@ -99,18 +90,19 @@ webdesignCards: [
       <div class="scroll-wrapper">
         <div class="scroll-track">
           <div class="scroll-content">
-          <img :src="iconHtml" alt="HTML ikon" />
-          <img :src="iconCss" alt="CSS ikon" />
-          <img :src="iconJs" alt="JS ikon" />
-          <img :src="iconPs" alt="Photoshop ikon" />
-          <img :src="iconAi" alt="Illustrator ikon" />
-          <img :src="iconId" alt="InDesign ikon" />
-           <img :src="iconHtml" alt="HTML ikon" />
-          <img :src="iconCss" alt="CSS ikon" />
-          <img :src="iconJs" alt="JS ikon" />
-          <img :src="iconPs" alt="Photoshop ikon" />
-          <img :src="iconAi" alt="Illustrator ikon" />
-          <img :src="iconId" alt="InDesign ikon" />
+          <img src="/img/Html.png" alt="HTML ikon" />
+          <img src="/img/CSS.png" alt="CSS ikon" />
+          <img src="/img/JS.png" alt="JS ikon" />
+          <img src="/img/PS.png" alt="Photoshop ikon" />
+          <img src="/img/IN.png" alt="Illustrator ikon" />
+          <img src="/img/Id.png" alt="InDesign ikon" />
+          <img src="/img/Html.png" alt="HTML ikon" />
+          <img src="/img/CSS.png" alt="CSS ikon" />
+          <img src="/img/JS.png" alt="JS ikon" />
+          <img src="/img/PS.png" alt="Photoshop ikon" />
+          <img src="/img/IN.png" alt="Illustrator ikon" />
+          <img src="/img/Id.png" alt="InDesign ikon" />
+          
           </div>
         </div>
       </div>
