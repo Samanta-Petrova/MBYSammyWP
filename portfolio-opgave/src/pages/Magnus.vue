@@ -1,16 +1,13 @@
 
 <script>
-import PortfolioCards from "../components/PortfolioCards.vue";
 
 
 export default {
-  name: "KFUM",
-  components:{
-    PortfolioCards
-  },
+  name: "Magnus",
   data() {
     return {
       activeTab: "problem"
+      
     };
   }
 };
@@ -58,6 +55,7 @@ export default {
 
   <!-- Tab Content -->
   <div v-show="activeTab === 'problem'" class="tab-content problemsektion">
+
     <h2 class="Overskrift">Problem</h2>
     <p>I dagens esports-verden er der mange spillere og hold, men det kan være svært at finde professionelle og stilrene platforme, der præsenterer spilleres informationer på en overskuelig måde. Mange eksisterende esports-hjemmesider er enten visuelt overfyldte eller mangler en klar struktur, hvilket gør det udfordrende for besøgende at finde relevante oplysninger hurtigt. Desuden er kontaktinformationer ofte skjulte eller svære at få adgang til, hvilket skaber barrierer for samarbejde, sponsorater eller faninteraktion. Der er derfor et behov for en hjemmeside, der kombinerer et stilrent design med nem adgang til alle væsentlige oplysninger om en spiller.</p>
     <div class="problemetKFUM">
@@ -99,7 +97,6 @@ Målgruppen kan segmenteres på flere niveauer. Demografisk er den primært mell
   </div>
 </section>
 
-<section><PortfolioCards :cards="homeCards" /></section>
 
 </template>
 

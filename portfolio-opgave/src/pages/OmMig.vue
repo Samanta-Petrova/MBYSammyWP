@@ -6,7 +6,6 @@ import PortfolioCards from "../components/PortfolioCards.vue"
 // Refs for each card stack
 const cardStackMusik = ref(null)
 const cardStackRejse = ref(null)
-const homeCards = ref([]) // or populate with actual card data
 
 
 // En hjælpefunktion, der får en card-stack ref og tilføjer interaktionslogik.
@@ -183,7 +182,6 @@ onMounted(() => {
         </div>
       </section>
       <!-- her bruges den importerede komponent-->
-      <section><PortfolioCards :cards="homeCards" /></section>
     </main>
 </template>
 

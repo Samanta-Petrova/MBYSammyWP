@@ -1,33 +1,10 @@
 
 <script>
-import Card from '../components/Card.vue';
 
 export default {
-  name: "RSOK",
-  components: {
-    Card
-  },
   data() { 
     return {
-      activeTab: "problem",
-      webdesignCards: [
-        {
-          image: "/img/RSOK.jpg",
-          title: "Rold Skov <br /> Orienteringsklub",
-          caption: "Kør musen over mig ",
-          description:
-            "I Rold Skov ligger lokalerne til Rold Skov Orienteringsklub...",
-          route: "/rsok"
-        },
-        {
-          image: "/img/AaKFUM.jpg",
-          title: "KFUM Aalborg",
-          caption: "Kør musen over mig ",
-          description:
-            "KFUM Aalborg er en ungdomsorganisation med fokus på fællesskab og aktiviteter.",
-          route: "/kfum"
-        }
-      ]
+      activeTab: "problem"
     }
   }
 }
@@ -171,18 +148,8 @@ På baggrund af denne problembeskrivelse er vi nået frem til følgende problemf
     </div>
   </div>
 </section>
-<section class="portfolioSektion BackgroundColorGreen card-section ">
-      
-      <h2 class="Overskrift">Nyeste cases</h2>
-      <div class="card-grid">
-       <div class="flip-card" v-for="(card, index) in webdesignCards" :key="index">
-        <Card :card="card" />
-      </div>
-        <router-link to="/portfolio">
-          <img class="PointerStar" src="/img/StarWTekst.png" alt="Se mere stjerne" />
-        </router-link>
-      </div>
-    </section>
+
+
 </template>
 
 <style scoped>

@@ -153,7 +153,7 @@ export default {
   </div>
 </section>
 
-<section><PortfolioCards :cards="homeCards" /></section>
+
 
 </template>
 
